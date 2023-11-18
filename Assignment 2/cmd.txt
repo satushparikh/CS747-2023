@@ -1,0 +1,15 @@
+python planner.py --mdp /home/user/data/mdp-4.txt --
+algorithm vi
+C:\Users\Satush\OneDrive - Indian Institute of Technology Bombay\Semesters\Sem 5\747\Assignment 2 2023\code\data\mdp\continuing-mdp-2-2.txt
+python planner.py --mdp C:\Users\Satush\OneDrive - Indian Institute of Technology Bombay\Semesters\Sem 5\747\Assignment 2 2023\code\data\mdp\continuing-mdp-2-2.txt
+ --algorithm vi
+ python autograder.py --task 1 --algorithm vi 
+ python planner.py --mdp data/mdp/continuing-mdp-10-5.txt --policy data/mdp/rand-continuing-mdp-10-5.txt
+
+python encoder.py --opponent data/football/test-1.txt --p 0.25 --q 0.75 >football_mdp.txt
+python3 encoder.py --opponent data/football/test-1.txt --p 0.25 --q 0.75 >football_mdp.txt
+default policy for terminal or sinks state is 0
+python3 planner.py --mdp football_mdp.txt > value.txt
+
+python3 decoder.py --value-policy value.txt --opponent data/football/test-1.txt >policyfile.txt
+python3 autograder.py --task 2

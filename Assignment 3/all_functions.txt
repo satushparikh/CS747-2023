@@ -1,0 +1,113 @@
+All Functions from All Modules:
+Functions in module 'agent.py':
+
+def __init__(self, table_config) -> None:
+def set_holes(self, holes_x, holes_y, radius):
+def action(self, ball_pos=None):
+Functions in module 'ball.py':
+
+def __init__(self):
+def apply_force(self, force, time=1):
+def set_velocity(self, new_velocity):
+def move_to(self, pos):
+def update(self, *args):
+def __init__(self):
+def update_stripe(self, transformation_matrix):
+def draw_stripe(self, sprite):
+def __init__(self):
+def __init__(self, ball_number):
+def update(self, *args):
+def update_sprite(self):
+def create_image(self, surface, coords):
+def is_clicked(self, events):
+def move_to(self, pos):
+def is_active(self, game_state, behind_separation_line=False):
+Functions in module 'collisions.py':
+
+def resolve_all_collisions(balls, holes, table_sides):
+def check_if_ball_touches_balls(target_ball_pos, target_ball_number, balls):
+Functions in module 'config.py':
+
+def get_default_font(size):
+def set_max_resolution():
+Functions in module 'cue.py':
+
+def __init__(self, target, next_state_function):
+def clear_canvas(self):
+def update(self, *args):
+def is_point_in_cue(self, point):
+def update_cue_displacement(self, mouse_pos, initial_mouse_dist):
+def draw_lines(self, game_state, target_ball, angle, color):
+def is_clicked(self, events):
+def make_visible(self, current_player):
+def make_invisible(self):
+def cue_is_active(self, game_state, events, render=True, action_for_next_state=None, seed=0, debug=False):
+def ball_hit(self):
+def update_cue(self, game_state, action_temp, seed, debug):
+def save_trace_dict(self, filename="trace.json"):
+Functions in module 'event.py':
+
+def __init__(self, event_type, data):
+def set_allowed_events():
+def events():
+Functions in module 'gamestate.py':
+
+def __init__(self, render=True, next_state_function = False, state=None):
+def fps(self):
+def mark_one_frame(self, render):
+def create_white_ball(self):
+def game_event_handler(self, event):
+def set_pool_balls(self, level=1):
+def start_pool(self, level=1):
+def reset_state(self):
+def is_behind_line_break(self):
+def redraw_all(self, update=True):
+def all_not_moving(self):
+def generate_table(self):
+def game_over(self, p1_won):
+def turn_over(self, penalize):
+def check_potted(self):
+def check_remaining(self):
+def first_collision(self, ball_combination):
+def check_pool_rules(self):
+def on_next_hit(self):
+def potted_ball_rules(self):
+def first_hit_rule(self):
+Functions in module 'graphics.py':
+
+def __init__(self, render=True):
+def add_separation_line(canvas):
+def create_buttons(text, text_font, text_color_normal, text_color_on_hover):
+def draw_main_menu(game_state):
+def iterate_until_button_press(buttons, game_state, text_ending_place, text_starting_place):
+def draw_rects(button_size, buttons, game_state, text_starting_place, emit=list()):
+Functions in module 'list_functions.py':
+
+Functions in module 'main.py':
+
+def parser():
+Functions in module 'physics.py':
+
+def point_distance(p1, p2):
+def distance_less_equal(p1, p2, dist):
+def ball_collision_check(ball1, ball2):
+def collide_balls(ball1, ball2):
+def triangle_area(side1, side2, side3):
+def rotation_matrix(axis, theta):
+def line_ball_collision_check(line, ball):
+def collide_line_ball(line, ball):
+Functions in module 'table_sprites.py':
+
+def __init__(self, x, y):
+def __init__(self, line):
+def __init__(self, table_size, color, table_points):
+def redraw(self):
+def update(self, game_state):
+def generate_target_balls(self, game_state):
+def generate_top_left_label(self, game_state):
+Functions in module 'utils.py':
+
+def __init__(self) -> None:
+def get_next_state(self, state, action, seed):
+Functions in module '__init__.py':
+
